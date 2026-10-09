@@ -1,0 +1,25 @@
+[rerere]
+	enabled = 1
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	rom = rebase origin/main
+	pom = push origin main
+	com = checkout main
+	rc = rebase --continue
+	rs = rebase --skip
+	a = add .
+	co = checkout
+	s = status
+	d = diff
+	l = log
+	last = log -1 HEAD
+	pop = stash pop
+	p = push origin HEAD
+	fp = push origin HEAD --force
+	rollback = reset --hard HEAD
+	lastdiff = diff HEAD~1
+	dollback = !git clean -d -x -f && git reset --hard HEAD
+	amend = !git add -A && git commit --amend --no-edit
+	wgd = !gh pr list --web --search "-label:dependencies"
+	gitcheck = !ssh -T git@github.com
