@@ -23,3 +23,4 @@
 	amend = !git add -A && git commit --amend --no-edit
 	wgd = !gh pr list --web --search "-label:dependencies"
 	gitcheck = !ssh -T git@github.com
+	prs = "!gh search prs --owner=@me --state=open --json url,title,repository -q '.[] | \"\\(.repository.name)#\\(.url | split(\"/\") | last)  \\(.title)\"' -- -label:dependencies"
