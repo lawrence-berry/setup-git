@@ -1,0 +1,12 @@
+# Global ignore patterns, for every repo. install.sh points core.excludesfile at this file.
+# No personal information belongs here: it is shared config.
+
+# macOS Finder
+.DS_Store
+
+# Session handover notes stay local. macOS matches any case; Linux doesn't, so both spellings.
+handover*.md
+HANDOVER*.md
+
+# Claude Code's per-machine settings
+**/.claude/settings.local.json
