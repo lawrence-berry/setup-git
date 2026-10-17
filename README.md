@@ -1,6 +1,6 @@
 # setup-git
 
-<img src="public/icon.png" alt="" width="96">
+<p align="center"><img src="public/icon.png" alt="setup-git icon" width="96" height="96"></p>
 
 Shared git config and aliases, kept out of `~/.gitconfig` so it can live in version control without any personal info (no `[user]` block — your name and email stay in your own `~/.gitconfig`).
 
