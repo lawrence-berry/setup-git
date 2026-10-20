@@ -15,7 +15,7 @@
   <a href="https://github.com/lawrence-berry/setup-git/actions/workflows/linux.yml"><img src="https://img.shields.io/github/actions/workflow/status/lawrence-berry/setup-git/linux.yml?branch=main&style=for-the-badge&logo=ubuntu&logoColor=white&label=Ubuntu%2024.04" alt="Ubuntu 24.04 CI status" /></a>
 </p>
 
-Shared git config and aliases, kept out of `~/.gitconfig` so it can live in version control without any personal info (no `[user]` block — your name and email stay in your own `~/.gitconfig`).
+Shared git config and aliases, kept out of `~/.gitconfig` so they can live in version control without personal information. There is no `[user]` block: the name and email stay in `~/.gitconfig`.
 
 ## Install
 
@@ -25,7 +25,7 @@ Shared git config and aliases, kept out of `~/.gitconfig` so it can live in vers
 
 Adds an `[include] path` to `~/.gitconfig` pointing at this repo's `gitconfig`. Re-runnable.
 
-It also sets `core.excludesfile` to this repo's `gitignore`, so the patterns that should apply to every repo (`.DS_Store`, handover notes, Claude's local settings) are in version control. Edit `gitignore` here, not `~/.gitignore`, which is no longer used.
+It also sets `core.excludesfile` to this repo's `gitignore`, so the patterns that should apply to every repo (`.DS_Store`, handover notes, Claude's local settings) are in version control. Edit `gitignore` in this repo; `~/.gitignore` is no longer used.
 
 ## Tests
 
