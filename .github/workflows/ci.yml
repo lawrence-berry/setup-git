@@ -36,4 +36,4 @@ jobs:
           ./install.sh
           [ "$(git config --global --get-all include.path | wc -l)" -eq 1 ]
           git config --global core.excludesfile | grep -q "$PWD/gitignore"
-          git config --global alias.s | grep -qx status
+          git config alias.s | grep -qx status
